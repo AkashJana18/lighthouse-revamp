@@ -130,6 +130,29 @@
   body {
     @apply bg-background text-foreground;
   }
+  .radial-gradient {
+    background: radial-gradient(
+      75% 75% at 50% 120%,
+      rgba(168, 85, 247, 0.5),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  .linear-mask {
+    background: linear-gradient(90deg, #e9d5ff 20%, #a855f7 50%, #e9d5ff 80%) 0 0 / 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .linear-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(216, 180, 254, 0.1) 0%,
+      rgba(168, 85, 247, 0.4) 50%,
+      rgba(216, 180, 254, 0.1) 100%
+    );
+  }
 }
 
 /* Hide scrollbar for mobile FAQ tabs */

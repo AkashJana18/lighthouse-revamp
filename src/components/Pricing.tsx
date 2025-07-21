@@ -197,7 +197,7 @@ const Pricing = () => {
   );
 
   return (
-    <div className="my-10 mx-auto flex flex-col justify-center items-center gap-4">
+    <div className="my-10 mx-auto flex flex-col justify-center items-center gap-4" id="pricing">
       <h1 className="font-semibold text-center text-4xl text-white">
         Discover your perfect plan
       </h1>

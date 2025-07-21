@@ -33,7 +33,7 @@ export function NavbarDemo({ children }: { children?: React.ReactNode }) {
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "#footer",
     },
   ];
 

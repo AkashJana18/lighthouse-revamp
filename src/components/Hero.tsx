@@ -12,7 +12,7 @@ export default function HeroSection() {
           >
             Store Your Data Permanently & Securely
           </h1>
-          <p className="md:text-lg text-sm md:max-w-2xl max-w-xs mx-auto">
+          <p className="md:text-lg text-slate-300 text-sm md:max-w-2xl max-w-xs mx-auto">
           Lighthouse offers permanent, decentralized storage powered by Filecoin.<br/>
           Secure, scalable, and ideal for individuals, developers, and enterprises.
           </p>

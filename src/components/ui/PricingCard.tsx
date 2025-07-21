@@ -36,7 +36,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       className={cn(
-        "relative rounded-3xl bg-secondary/30 flex flex-col justify-between p-8 border-4 transition-all duration-300 hover:scale-105"
+        "relative rounded-3xl bg-secondary/30 flex flex-col justify-between p-8 border-4 transition-all duration-300 hover:scale-105 hover:border-purple-500/70"
       )}
     >
       <div>
@@ -57,7 +57,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
         </div>
 
         <div className="mb-8">
-          <h4 className="font-semibold mb-4">What's included</h4>
+          <h4 className="font-semibold mb-4">What&apos;s included</h4>
           <ul className="space-y-2">
             {features.map((feature, index) => (
               <motion.li

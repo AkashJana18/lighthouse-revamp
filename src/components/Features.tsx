@@ -52,7 +52,7 @@ const Features = () => {
             key={index}
             borderRadius="1.75rem"
             duration={Math.floor(Math.random() * 10000 + 10000)}
-            className="flex-1 text-black dark:text-white shadow-drop-lg"
+            className="flex-1 text-black dark:text-white shadow-drop-lg border-slate-500/30 border"
           >
             <div className="flex relative flex-col justify-center items-center gap-1 p-4">
               <div className="absolute top-0 bg-purple-200 rounded-full blur-2xl w-24 h-24 z-1"></div>

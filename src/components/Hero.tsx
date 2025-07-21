@@ -4,8 +4,8 @@ import { GradientBackground } from "./ui/NoiseGradient";
 
 export default function HeroSection() {
   return (
-    <div className="flex items-center justify-center min-h-screen overflow-hidden">
-      <div className="relative z-20 flex flex-col items-center">
+    <div className="flex items-center justify-center min-h-screen ">
+      <div className="relative z-20 flex flex-col items-center w-full">
         <div className="text-center space-y-4 max-w-4xl">
           <h1
             className="md:text-7xl text-3xl mx-auto font-jost font-bold mt-20"
@@ -23,14 +23,15 @@ export default function HeroSection() {
         <AnimatedButton title="Try For Free" variant="primary" />
         </div>
         <StatBox />
-      </div>
-
-      <GradientBackground
+        <GradientBackground
         className="rounded-b-3xl overflow-hidden -z-99"
         gradientOrigin="bottom-middle"
         noiseIntensity={0.1}
         noisePatternSize={10}
       />
+      </div>
+
+      
     </div>
   );
 }

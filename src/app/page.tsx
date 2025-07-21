@@ -1,3 +1,4 @@
+import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import HeroSection from "@/components/Hero";
 import Pricing from "@/components/Pricing";
@@ -15,6 +16,7 @@ export default function Home() {
         <Features />
         <Pricing />
         <Trusted />
+        <FAQ />
       </NavbarDemo>
       <ThemeSwitcher />
     </>

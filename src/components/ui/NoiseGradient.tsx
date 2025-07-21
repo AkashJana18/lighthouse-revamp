@@ -112,7 +112,7 @@ function Noise({
 function GradientBackground({
   gradientType = 'radial-gradient',
   gradientSize = '125% 125%',
-  gradientOrigin = 'bottom-middle',
+  gradientOrigin = 'middle-middle',
   colors = [
     { color: "rgba(142, 97, 255, 1.0)", stop: "0%" },      // Neon purple center
     { color: "rgba(129, 58, 255, 0.85)", stop: "15%" },    // Vibrant middle

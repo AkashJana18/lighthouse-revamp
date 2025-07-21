@@ -26,7 +26,7 @@ export default function HeroSection() {
       </div>
 
       <GradientBackground
-        className="rounded-b-3xl overflow-hidden"
+        className="rounded-b-3xl overflow-hidden -z-99"
         gradientOrigin="bottom-middle"
         noiseIntensity={0.1}
         noisePatternSize={10}

@@ -6,7 +6,7 @@ import {
   useMotionTemplate,
   useMotionValue,
   useTransform,
-} from "framer-motion";
+} from "motion/react";
 import React, { useRef } from "react";
 
 export function Button({
@@ -31,8 +31,8 @@ export function Button({
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl 2xl:col-span-1 md:col-span-1 p-[1px] overflow-hidden",
-        containerClassName
+        "relative overflow-hidden bg-transparent p-[1px] text-xl",
+        containerClassName,
       )}
       style={{
         borderRadius: borderRadius,
@@ -46,8 +46,8 @@ export function Button({
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
             className={cn(
-              "h-20 w-20 opacity-[0.8] bg-[radial-gradient(var(--purple-400)_40%,transparent_60%)]",
-              borderClassName
+              "h-20 w-20 bg-[radial-gradient(#c8a2c8_40%,transparent_60%)] opacity-[0.8]",
+              borderClassName,
             )}
           />
         </MovingBorder>
@@ -55,12 +55,11 @@ export function Button({
 
       <div
         className={cn(
-          "relative bg-sky-100/[0.05] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
-          className
+          "relative flex h-full w-full items-center justify-center bg-black/10 text-sm text-white antialiased backdrop-blur-xl",
+          className,
         )}
         style={{
           borderRadius: `calc(${borderRadius} * 0.96)`,
-          background: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%",
         }}
       >
         {children}
@@ -95,11 +94,11 @@ export const MovingBorder = ({
 
   const x = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).x
+    (val) => pathRef.current?.getPointAtLength(val).x,
   );
   const y = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).y
+    (val) => pathRef.current?.getPointAtLength(val).y,
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;

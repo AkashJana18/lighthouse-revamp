@@ -1,4 +1,5 @@
-import { Button } from "./ui/MovingBorders";
+"use client";
+import { Button } from "@/components/ui/MovingBorders";
 
 const Features = () => {
   const KeyFeatures = [
@@ -11,7 +12,7 @@ const Features = () => {
     {
       thumbnail: "/featureIcon/feature_5.svg",
       id: 5,
-      title: "Decentralized Storage Solutions for Your Files",
+      title: "Decentralized Storage Solutions",
       desc: `Harness the power of IPFS and Filecoin to securely store your files on a decentralized network.`,
     },
     {
@@ -41,42 +42,31 @@ const Features = () => {
   ];
 
   return (
-    <div className="py-20 w-full">
-      <h1 className="heading">
-        My work<span className="text-purple"> experience</span>
+    <div className="p-10 m-10" id="features">
+      <h1 className="font-semibold text-center text-4xl text-white">
+        Why Choose Lighthouse &#63;
       </h1>
-
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-        {KeyFeatures.map((card) => (
+      <div className="w-full mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {KeyFeatures.map((feature, index) => (
           <Button
-            key={card.id}
-            //   random duration will be fun , I think , may be not
-            duration={Math.floor(Math.random() * 10000) + 10000}
+            key={index}
             borderRadius="1.75rem"
-            style={{
-              //   add these two
-              //   you can generate the color from here https://cssgradient.io/
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-              // add this border radius to make it more rounded so that the moving border is more realistic
-              borderRadius: `calc(1.75rem* 0.96)`,
-            }}
-            // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            duration={Math.floor(Math.random() * 10000 + 10000)}
+            className="flex-1 text-black dark:text-white shadow-drop-lg"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+            <div className="flex relative flex-col justify-center items-center gap-1 p-4">
+              <div className="absolute top-0 bg-purple-200 rounded-full blur-2xl w-24 h-24 z-1"></div>
               <img
-                src={card.thumbnail}
-                alt={card.thumbnail}
-                className="lg:w-32 md:w-20 w-16"
+                src={feature.thumbnail}
+                alt={feature.thumbnail}
+                className="w-24 h-24 z-2"
               />
               <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.title}
+                <h1 className=" text-xl md:text-2xl font-bold">
+                  {feature.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
+                <p className="text-start text-slate-300 mt-3 font-semibold">
+                  {feature.desc}
                 </p>
               </div>
             </div>

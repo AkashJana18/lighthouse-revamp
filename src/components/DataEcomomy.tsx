@@ -152,7 +152,7 @@ export default function DataEconomy() {
                       delay={3}
                       size={400}
                       borderWidth={2}
-                      className="from-transparent via-blue-500 to-transparent"
+                      className="from-transparent via-yellow-200 to-transparent"
                     />
                   </div>
                 </div>

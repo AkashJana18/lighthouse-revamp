@@ -36,7 +36,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       className={cn(
-        "relative rounded-3xl bg-secondary/30 flex flex-col justify-between p-8 border-4 transition-all duration-300 hover:scale-105 hover:border-purple-500/70"
+        "relative rounded-3xl bg-secondary/30 flex flex-col justify-between p-8 border-4 transition-all duration-300 hover:scale-105 border-purple-900/70 hover:border-purple-500 shadow-lg",
       )}
     >
       <div>

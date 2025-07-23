@@ -1,3 +1,4 @@
+import DataEconomy from "@/components/DataEcomomy";
 import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import { Footer } from "@/components/Footer";
@@ -16,6 +17,7 @@ export default function Home() {
         <Features />
         <Pricing />
         <Trusted />
+        <DataEconomy/>
         <FAQ />
         <Footer />
       </NavbarDemo>

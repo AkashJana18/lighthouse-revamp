@@ -68,8 +68,8 @@ const clientsLogo: ClientLogo[] = [
 
 const Trusted: React.FC = () => {
   return (
-    <div>
-      <h2 className="text-center font-semibold text-4xl text-white my-5">
+    <div className='py-10'>
+      <h2 className="text-center font-semibold text-4xl text-white my-10">
         Trusted by
       </h2>
       <div className="flex relative overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-10  before:content-[''] after:absolute after:right-0 after:top-0 after:h-full after:w-10  after:content-['']">

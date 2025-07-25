@@ -95,9 +95,13 @@ const sections = [
 
 export default function DataEconomy() {
   return (
-    <div className="bg-black text-white space-y-16 py-20 px-6 md:px-20">
+    <div className="text-white space-y-16 py-20 px-6 md:px-20">
+      <h1 className="font-semibold text-center text-4xl text-white">
+        Empowering the Data Economy
+      </h1>
+
       {sections.map((section, idx) => (
-        <section key={idx} className="max-w-7xl mx-auto">
+        <div key={idx} className="max-w-7xl mx-auto">
           <div
             className={`flex flex-col md:flex-row items-center justify-between gap-10 ${
               idx % 2 !== 0 ? "md:flex-row-reverse" : ""
@@ -169,7 +173,7 @@ export default function DataEconomy() {
             ))}
           </div>
           <div className="border-b  h-px border-slate-500/50 w-[80%] mx-auto mt-10"></div>
-        </section>
+        </div>
       ))}
     </div>
   );

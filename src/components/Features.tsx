@@ -46,7 +46,7 @@ const Features = () => {
       <h1 className="font-semibold text-center text-4xl text-white">
         Why Choose Lighthouse &#63;
       </h1>
-      <div className="w-full mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {KeyFeatures.map((feature, index) => (
           <Button
             key={index}

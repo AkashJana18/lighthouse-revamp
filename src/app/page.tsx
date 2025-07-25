@@ -1,4 +1,5 @@
 import DataEconomy from "@/components/DataEcomomy";
+import Ecosystem from "@/components/Ecosystem";
 import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import { Footer } from "@/components/Footer";
@@ -16,6 +17,7 @@ export default function Home() {
         <Pricing />
         <Trusted />
         <DataEconomy />
+        <Ecosystem />
         <FAQ />
         <Footer />
       </NavbarDemo>

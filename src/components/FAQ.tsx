@@ -64,7 +64,7 @@ const FAQ = () => {
         id="faq"
         className="relative py-8 md:py-16 bg-transparent backdrop-blur-sm border border-slate-600/30 rounded-lg sm:mx-8 lg:mx-16 my-8 max-w-7xl mx-auto"
       >
-        <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-purple-600/10 via-transparent to-transparent blur-lg pointer-events-none" />
+        <div className="absolute top-0 inset-0 rounded-xl bg-gradient-to-b from-purple-600/20 via-transparent to-transparent blur-lg pointer-events-none -z-10" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           {/* Heading */}

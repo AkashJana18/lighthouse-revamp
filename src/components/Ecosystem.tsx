@@ -6,18 +6,7 @@ import { IconBrandTelegram, IconBrandX, IconWorld } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { MagicCard } from "./ui/MagicCard";
-type EcosystemItem = {
-  name: string;
-  description: string;
-  icon: string;
-  image?: string;
-  tags: string[];
-  website?: string | null;
-  telegram?: string | null;
-  twitter?: string | null;
-};
 
-// Your data array
 
 const CATEGORY_MAP: Record<string, string> = {
   ai: "Artificial Intelligence (AI)",

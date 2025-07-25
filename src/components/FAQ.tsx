@@ -10,12 +10,12 @@ const FAQ = () => {
     {
       question: "What does it mean by permanent storage?",
       answer:
-        "The permanent storage means you pay once for your files storage and it's meant to be stored forever. No need of recurrently paying for your files.",
+        "The permanent storage means you pay once for your files storage and it&apos;s meant to be stored forever. No need of recurrently paying for your files.",
     },
     {
       question: "How long will data be stored on Lighthouse?",
       answer:
-        "As we move closer to our mainnet launch, we aim to be transparent about the estimated duration of data storage. Initially, your data might be projected to remain stored for around 25 years. However, as the endowment pool grows over time, aligned with Lighthouse's economic model, this duration is expected to increase. If the model performs as designed, your files should remain stored for a long period without requiring additional payments as part of lifetime plan. In the unlikely event that the endowment pool depletes its funds, users might need to contribute again to continue storage.",
+        "As we move closer to our mainnet launch, we aim to be transparent about the estimated duration of data storage. Initially, your data might be projected to remain stored for around 25 years. However, as the endowment pool grows over time, aligned with Lighthouse&apos;s economic model, this duration is expected to increase. If the model performs as designed, your files should remain stored for a long period without requiring additional payments as part of lifetime plan. In the unlikely event that the endowment pool depletes its funds, users might need to contribute again to continue storage.",
     },
     {
       question: "What are the upload or file size restrictions on Lighthouse?",
@@ -30,7 +30,7 @@ const FAQ = () => {
     {
       question: "Can I edit/delete files uploaded to Lighthouse?",
       answer:
-        "We definitely understand that not all use cases will require storing data permanently. Files can be deleted off from our hot storage and other Filecoin miners. However, this doesn't prevent nodes in the IPFS decentralised storage network from retaining copies of data indefinitely. If you are looking for use cases involving editing the files, you can contact us via email or Discord, we can discuss how you can achieve that using mutable references.",
+        "We definitely understand that not all use cases will require storing data permanently. Files can be deleted off from our hot storage and other Filecoin miners. However, this doesn&apos;t prevent nodes in the IPFS decentralised storage network from retaining copies of data indefinitely. If you are looking for use cases involving editing the files, you can contact us via email or Discord, we can discuss how you can achieve that using mutable references.",
     },
     {
       question: "What does it cost to store data to Lighthouse?",
@@ -45,7 +45,7 @@ const FAQ = () => {
     {
       question: "How is it different from IPFS and Filecoin?",
       answer:
-        "IPFS is a distributed storage network famous for its content-addressing way of referencing files which makes it tamper-proof. There is no way to pay an IPFS node to store your files in an IPFS token (because there is no such token 😛). That's why Filecoin is built on IPFS and allows anyone to pay using Filecoin tokens to storage miners to store your files. Although, Lighthouse is built on IPFS and Filecoin miner network, there are couple of value adds that Lighthouse brings in: 1. Permanent storage - in Filecoin you have to recurrently pay for your files else the miner will drop your files. Lighthouse solves this by bringing in permanent storage ability. 2. Ease of interaction - Lighthouse abstracts away complexities of directly using Filecoin and dealing with Filecoin miner network. 3. Private files - IPFS and Filecoin by default are public storage networks and anyone can see data you upload. Building your own encryption layer is not an easy job. Lighthouse by default provides the user a layer of encryption and access control for encrypting your files/data along with sharing to authorised users.",
+        "IPFS is a distributed storage network famous for its content-addressing way of referencing files which makes it tamper-proof. There is no way to pay an IPFS node to store your files in an IPFS token (because there is no such token 😛). That&apos;s why Filecoin is built on IPFS and allows anyone to pay using Filecoin tokens to storage miners to store your files. Although, Lighthouse is built on IPFS and Filecoin miner network, there are couple of value adds that Lighthouse brings in: 1. Permanent storage - in Filecoin you have to recurrently pay for your files else the miner will drop your files. Lighthouse solves this by bringing in permanent storage ability. 2. Ease of interaction - Lighthouse abstracts away complexities of directly using Filecoin and dealing with Filecoin miner network. 3. Private files - IPFS and Filecoin by default are public storage networks and anyone can see data you upload. Building your own encryption layer is not an easy job. Lighthouse by default provides the user a layer of encryption and access control for encrypting your files/data along with sharing to authorised users.",
     },
     {
       question: "How is it different from Arweave?",
@@ -73,7 +73,7 @@ const FAQ = () => {
               FAQs
             </h1>
             <p className="text-base sm:text-lg text-slate-500 mt-2 sm:mt-4">
-              You've got questions, and we've got answers.
+              You&apos;ve got questions, and we&apos;ve got answers.
             </p>
           </div>
           <Accordion

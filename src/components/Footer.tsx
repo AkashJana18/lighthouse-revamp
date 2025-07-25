@@ -46,7 +46,7 @@ export function Footer() {
                 href="#"
                 className="block transition-colors hover:text-primary"
               >
-                FAQ's
+                FAQ&apos;s
               </a>
               <a
                 href="#"

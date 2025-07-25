@@ -7,7 +7,7 @@ import {
   useMotionValue,
   useTransform,
 } from "motion/react";
-import React, { useRef } from "react";
+import React, { ComponentPropsWithoutRef, ElementType, useRef } from "react";
 
 export function Button({
   borderRadius = "1.75rem",
@@ -21,13 +21,12 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: ElementType;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
-}) {
+} & ComponentPropsWithoutRef<"button">) {
   return (
     <Component
       className={cn(
@@ -79,9 +78,8 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
-}) => {
-  const pathRef = useRef<any>();
+} & ComponentPropsWithoutRef<"svg">) => {
+  const pathRef = useRef<SVGRectElement>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
@@ -94,11 +92,11 @@ export const MovingBorder = ({
 
   const x = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).x,
+    (val) => pathRef.current?.getPointAtLength(val).x || 0
   );
   const y = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).y,
+    (val) => pathRef.current?.getPointAtLength(val).y || 0
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
